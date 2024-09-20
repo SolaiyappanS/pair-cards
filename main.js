@@ -1,5 +1,15 @@
 const tilesContainer = document.querySelector(".tiles");
-const values = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+const values = [
+  `<i class="fa-solid fa-coins"></i>`,
+  `<i class="fa-solid fa-piggy-bank"></i>`,
+  `<i class="fa-solid fa-sack-dollar"></i>`,
+  `<i class="fa-solid fa-indian-rupee-sign"></i>`,
+  `<i class="fa-solid fa-dollar-sign"></i>`,
+  `<i class="fa-solid fa-money-bill-1-wave"></i>`,
+  `<i class="fa-solid fa-scale-balanced"></i>`,
+  `<i class="fa-solid fa-house-chimney"></i>`,
+  `<i class="fa-solid fa-hand-holding-dollar"></i>`,
+];
 const valuesPicklist = [...values, ...values];
 const tileCount = valuesPicklist.length;
 
@@ -36,6 +46,8 @@ function buildTile(value) {
     if (valueToMatch === value) {
       element.setAttribute("data-revealed", "true");
       activeTile.setAttribute("data-revealed", "true");
+      element.classList.add("paired");
+      activeTile.classList.add("paired");
 
       activeTile = null;
       awaitingEndOfMove = false;
