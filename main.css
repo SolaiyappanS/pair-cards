@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Anton&display=swap");
 
 body {
-  background: #ffd7c4;
+  background: #b7edfb;
   margin: 0;
 }
 
 h1 {
   font-family: "Anton", sans-serif;
-  color: #ff6f3b;
+  color: #009fc7;
   font-size: 45px;
   font-weight: 400;
   position: fixed;
@@ -23,21 +23,21 @@ h1 {
   margin: 48px auto;
   width: max-content;
   display: grid;
-  grid-template-columns: repeat(6, 100px);
+  grid-template-columns: repeat(6, 90px);
   gap: 16px;
   box-sizing: border-box;
 }
 
 .tile {
-  height: 150px;
-  background: #ff9874;
+  height: 120px;
+  background: #009fc7;
   cursor: pointer;
   border-radius: 5px;
   font-size: 90px;
   word-wrap: break-word;
   word-break: break-all;
   text-align: center;
-  line-height: 150px;
+  line-height: 120px;
   color: #fff;
   font-family: "Protest Guerrilla", sans-serif;
   font-weight: 400;
@@ -46,22 +46,46 @@ h1 {
 
 #buttons {
   position: fixed;
-  bottom: 10%;
+  width: 50vw;
+  height: 60vh;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  background-color: #fffa;
+  transform: translate(-50%, -40%);
   display: none;
+  border-radius: 10px;
 }
 
-#buttons button {
-  background-color: #ff6f3b;
+#buttons .button1 {
+  background-color: #009fc7;
   color: #fff;
   outline: none;
   border: none;
   border-radius: 5px;
   padding: 5px 30px;
-  font-size: 25px;
+  font-size: 40px;
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: auto 15px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+#buttons .button2 {
+  background-color: #009fc7;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 30px;
+  font-size: 40px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: auto 15px;
+  position: absolute;
+  top: 40%;
+  right: 10%;
 }
