@@ -1,16 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Anton&display=swap");
-
 body {
   background: #b7edfb;
   margin: 0;
 }
 
 h1 {
-  font-family: "Anton", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #009fc7;
   font-size: 45px;
-  font-weight: 400;
   position: fixed;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -39,7 +37,7 @@ h1 {
   text-align: center;
   line-height: 120px;
   color: #fff;
-  font-family: "Protest Guerrilla", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -64,7 +62,7 @@ h1 {
   border-radius: 5px;
   padding: 5px 30px;
   font-size: 40px;
-  font-family: "Anton", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: auto 15px;
@@ -81,7 +79,7 @@ h1 {
   border-radius: 5px;
   padding: 5px 30px;
   font-size: 40px;
-  font-family: "Anton", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: auto 15px;
