@@ -96,3 +96,15 @@ h1 {
   color: #009fc7;
   border: #009fc7 solid 5px;
 }
+
+.icon_svg svg {
+  height: 65px;
+  width: 65px;
+  margin-top: 30px;
+}
+
+.icon_svg svg path,
+.icon_svg svg circle,
+.icon_svg svg rect {
+  fill: currentColor; /* This allows the SVG to inherit the text color */
+}
