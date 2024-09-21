@@ -104,3 +104,9 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
 }
+
+#cooper_logo {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
