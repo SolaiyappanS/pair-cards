@@ -45,6 +45,7 @@ function buildTile(value) {
     const valueToMatch = activeTile.getAttribute("data-value");
 
     if (valueToMatch === value) {
+      playSound("winSound");
       element.setAttribute("data-revealed", "true");
       activeTile.setAttribute("data-revealed", "true");
       element.classList.add("paired");
@@ -83,4 +84,9 @@ for (let i = 0; i < tileCount; i++) {
 
   valuesPicklist.splice(randomIndex, 1);
   tilesContainer.appendChild(tile);
+}
+
+function playSound(soundName) {
+  document.getElementById(soundName).currentTime = 0;
+  document.getElementById(soundName).play();
 }
