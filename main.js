@@ -45,7 +45,6 @@ function buildTile(value) {
     const valueToMatch = activeTile.getAttribute("data-value");
 
     if (valueToMatch === value) {
-      playSound("winSound");
       element.setAttribute("data-revealed", "true");
       activeTile.setAttribute("data-revealed", "true");
       element.classList.add("paired");
@@ -56,8 +55,9 @@ function buildTile(value) {
       revealedCount += 2;
 
       if (revealedCount === tileCount) {
+        playSound("winSound");
         document.getElementById("buttons").style.display = "block";
-      }
+      } else playSound("matchSound");
 
       return;
     }
@@ -88,5 +88,6 @@ for (let i = 0; i < tileCount; i++) {
 
 function playSound(soundName) {
   document.getElementById(soundName).currentTime = 0;
+  document.getElementById(soundName).volume = 0.1;
   document.getElementById(soundName).play();
 }
