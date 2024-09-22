@@ -1,13 +1,16 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
 body {
   background: #cef3fc;
   margin: 0;
 }
 
-h1 {
-  font-family: "Lato", sans-serif;
+h1.header {
   color: #009fc7;
   font-size: 45px;
-  position: absolute;
+  position: fixed;
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
@@ -15,7 +18,7 @@ h1 {
 
 .tiles {
   position: fixed;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 48px auto;
@@ -41,7 +44,6 @@ h1 {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-  box-shadow: #0002 -1px 0px 10px 7px;
 }
 
 #buttons {
@@ -80,6 +82,16 @@ h1 {
   right: 10%;
 }
 
+#buttons h1 {
+  font-family: "Lato", sans-serif;
+  color: #009fc7;
+  font-size: 45px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .paired {
   background-color: #fff;
   color: #009fc7;
@@ -110,4 +122,12 @@ h1 {
   position: fixed;
   bottom: 5%;
   right: 5%;
+}
+
+#coopergames_logo {
+  position: fixed;
+  bottom: 5%;
+  left: 3%;
+  top: auto;
+  width: 250px;
 }
